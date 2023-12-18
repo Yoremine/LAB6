@@ -1,0 +1,38 @@
+.profile__container {
+    margin: 30px auto;
+    width: 600px;
+    height: 320px;
+
+    border-radius: 20px;
+    background-color: #8fb39c;
+}
+
+.profile__title {
+    position: relative;
+    font-size: 30px;
+    font-family: 'GOST Type A';
+    margin: 0 auto;
+    left: 20px;
+    top: 10px;
+}
+
+.profile__photo {
+    width: 250px;
+    height: 250px;
+    margin: 15px 15px;
+    border-radius: 50%;
+}
+
+.profile__button {
+    position: relative;
+    top: -180px;
+    left: 50px;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: 'GOST Type A';
+    font-size: 23px;
+}

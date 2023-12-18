@@ -1,0 +1,12 @@
+.menu {
+    margin: 0 auto;
+}
+
+.menu__container {
+    border: greenyellow;
+    margin: 50px auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+

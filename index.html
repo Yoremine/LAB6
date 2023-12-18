@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>6 ЛАБОРАТОРНАЯ</title>
+</head>
+<body>
+    <header>
+        <section class="profile__container">
+            <h2 class="profile__title">Страница галлереи</h2>
+            <img class="profile__photo" src="/images/profilePhoto.jpg" alt="Фото профиля"/>
+            <button 
+            id="menu__button_addimage" 
+            class="profile__button" 
+            type="button"
+            onclick="window['dialog-id'].showModal()" 
+            aria-controls="dialog-id"
+            ><strong>Добавить изображение</strong>
+          </button>
+        </div>
+        </section>    
+    </header>   
+    <main>
+        <div id="myModal" class="modal">
+  
+   
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <image class="zoom-image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"> </image>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          
+          </div>
+          
+       
+
+        <section class="menu">
+            <div class="menu__container">
+                <section class="cards">
+    
+                </section>
+
+
+            <dialog id="dialog-id">  
+                <form class="popup" id="form1">
+                  <h2 class="popup__title">Добавить изображение</h2>    
+                  <input
+                    class="popup__input"
+                    placeholder="Ссылка"
+                    type="text"
+                    id="popup__input_link"
+                    name="popupLink"
+                  >
+                  <input
+                    class="popup__input"
+                    placeholder="Название"
+                    type="text"
+                    id="popup__input_title"
+                    name="popupTitle"
+                  >
+                  <button class="popup__button" type="button"
+                    onclick="window['dialog-id'].close()"
+                  >Отправить</button>
+                </form>
+                <form method="dialog">
+                  <button class="popup__close-button">
+                        <span class="visually-hidden">X</span>
+                    </button>
+                </form> 
+              </dialog>
+        </section>
+    </main>
+    <template id="card">
+        <figure class="card scale">
+          <button type="button" class="button card__remove"></button>
+          <img class="card__image " src="#" alt="#" id="#card__image" />
+          <figcaption class="card__caption">
+            <h2 class="card__title"></h2>
+            <div class="card__like-block">
+              <p class="card__like-counter"></p>
+            </div>
+          </figcaption>
+        </figure>
+      </template>
+</body>
+<script type="module" src="./scripts/script.js"></script>
+</html>

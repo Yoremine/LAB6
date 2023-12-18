@@ -1,0 +1,11 @@
+@import url(./normalize.css);
+@import url(./profile/profile.css);
+@import url(./main/main.css);
+@import url(./root/root.css);
+@import url(./popup/popup.css);
+@import url(./cards/card.css);
+@import url(./cards/cards.css);
+
+body {
+    background-color: rgb(145, 160, 148)
+}
