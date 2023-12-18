@@ -75,13 +75,7 @@ buttonAddImage.addEventListener('click', ()=>{
   AddNewCard({name:name, link:link});
 });
 
-const cardElementTest = document.querySelectorAll('.card:first-child')[0]
-    .querySelector('.card__like').classList.add('card__like_checked');
-console.log('Hello');
-let profileName = document.querySelector('#profile__input_name');
-console.log(`Значение pl = ${profileName.placeholder}`);
-let profileAbout = document.querySelector('#profile__input_about');
-console.log(`Значение pl = ${profileAbout.placeholder}`);
+
 let buttonProfile = document.querySelector('.profile__button');
 console.log(`Значение button = ${buttonProfile}`);
 function showClick() {
@@ -103,7 +97,7 @@ function imageExists(image_url){
   http.send();
   return http.status != 404;
 }
-profileImage.addEventListener('click', ShowImage);
+
 const formElement = document.getElementById('form1');
 var list = [];
 formElement.addEventListener('submit', (e) => {
